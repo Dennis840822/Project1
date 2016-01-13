@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="性別"
+        android:text="@string/Sex"
         android:id="@+id/textView" />
     <EditText android:id="@+id/number1"
         android:layout_width="fill_parent"
@@ -24,7 +24,7 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="年齡"
+        android:text="@string/Age"
         android:id="@+id/textView2"
         android:layout_marginTop="31dp"
         android:layout_below="@+id/number1"

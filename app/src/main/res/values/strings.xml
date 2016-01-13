@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Project1</string>
+    <string name="Sex">性別:</string>
+    <string name="Age">年齡:</string>
+    <string name="button1">婚姻建議:</string>
+    <string name="result">結果:</string>
+    <string name="hurry">還不急:</string>
+    <string name="married">趕快結婚:</string>
+    <string name="find">開始找對象:</string>
+    <string name="man">男:</string>
+    <string name="woman">女:</string>
 </resources>

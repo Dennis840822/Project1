@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.util.*;//import log除錯函數進來
 
 public class Project1 extends AppCompatActivity {
 
@@ -30,17 +31,26 @@ public class Project1 extends AppCompatActivity {
 
                 String strSug = "結果:";//宣告strSug為字串，上顯示"結果："
                 if (Sum.equals("男")){//判斷(Sum.equals)Sum所取得到的字串，是否和括弧裡的字串一樣
-                    if (iAge < 28)//如果iAge小於28
+                    if (iAge < 28){//如果iAge小於28
                         strSug = strSug + "不急";//strSug上顯示"結果:"加上"不急"
-                    else if (iAge > 33)
-                        strSug += "趕快結婚";
+                        Log.d("Marrisug","man, don`t hurry");//除錯的分類標籤，(標籤裡)的訊息
+                    }
+                    else if (iAge > 33){
+                        strSug += getString(R.string.married);
+                        Log.d("Marrisug", "man, start to find girlfriend!");
+                    }
+                    //else
+                    //strSug += getString(R.string.find);
                 }
                     else if(Sum.equals("女")){
                     strSug += "開始找對象";
+                    Log.d("Marrisug","woman,don`t hurry!");
                     if (iAge < 25)
                         strSug += "不急";
+                    Log.d("Marrisug","woman, hurry to get married!");
                     if (iAge > 30)
                         strSug += "開始找對象";
+                        Log.d("Marrisug","woman, start to find boyfriend");
                 }
                 else
                 {

@@ -16,5 +16,6 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-sdk android:minSdkVersion="16"/>//這是告知Android系統必須要使用Android(API版本號碼16)以後的sdk才能執行，不行在舊版Android平台上執行
 
 </manifest>

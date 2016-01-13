@@ -35,12 +35,10 @@ public class Project1 extends AppCompatActivity {
                         strSug = strSug + "不急";//strSug上顯示"結果:"加上"不急"
                         Log.d("Marrisug","man, don`t hurry");//除錯的分類標籤，(標籤裡)的訊息
                     }
-                    else if (iAge > 33){
+                    else if (iAge > 33)
                         strSug += getString(R.string.married);
                         Log.d("Marrisug", "man, start to find girlfriend!");
-                    }
-                    //else
-                    //strSug += getString(R.string.find);
+
                 }
                     else if(Sum.equals("女")){
                     strSug += "開始找對象";
